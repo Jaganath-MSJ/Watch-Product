@@ -1,0 +1,77 @@
+.home {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: [one] 1fr [two] 1fr;
+}
+
+.image {
+    position: relative;
+}
+
+.image>img {
+    width: 60%;
+}
+
+.image>svg {
+    position: absolute;
+    fill: red;
+    top: 170px;
+    left: 355px;
+}
+
+.image>h2 {
+    position: absolute;
+    color: blue;
+    font-size: xx-large;
+    top: 200px;
+    left: 355px;
+}
+
+.details {
+    text-align: left;
+}
+
+.selectColor {
+    display: flex;
+}
+
+.selectColor>img {
+    width: 20%;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.imgPresent {
+    border-color: blueviolet;
+    border-style: solid;
+    border-radius: 10px;
+    transition: .1s;
+}
+
+.featNoSelected, .featSelected {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: rgb(199, 197, 197);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.featSelected {
+    background-color: gray;
+    color: white;
+    transition: .5s;
+}
+
+.details>button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
